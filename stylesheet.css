@@ -1,0 +1,44 @@
+
+@import url(header.css);
+@import url(introduction.css);
+@import url(about.css);
+@import url(project.css);
+@import url(skills.css);
+@import url(contact.css);
+hr{
+    border:0.7px solid rgb(77, 73, 73);
+    margin: 3vh 6vw 3vh 6vw;
+    z-index: 2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+/* Total scrollbar area */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 8px; /* For horizontal scrollbar */
+  }
+  
+  /* Scrollbar track (background) */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+  }
+  
+  /* Scrollbar thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  /* Thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff8396;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  

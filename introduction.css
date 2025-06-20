@@ -1,0 +1,155 @@
+.introduction {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .left_sec {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 45vw;
+    background-color: rgb(18, 18, 18);
+  }
+  .right_sec {
+ display: flex;    
+ height: 90vh;
+    width: 45vw;
+    background-color: rgb(18, 18, 18);
+  }
+  .photo {
+    position: relative;
+    top: 10%;
+    
+    
+    /* max-width: 100%;
+    width: auto;
+    height: auto;
+    aspect-ratio: 720/1080; */
+
+    object-fit:contain;
+    scale: 1.1;
+    border-radius: 0% 0% 22% 22%;
+  }
+  .left_hi {
+    display: flex;
+    
+   flex-wrap: wrap;
+    position: relative;
+    top: 17%;
+    font-weight: bold;
+    font-size: 4vw;
+    color: rgb(255, 255, 255);
+    font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman",
+      serif;
+  }
+  
+  .name {
+    overflow: hidden;
+    color: #ff004f;
+    position: relative;
+    left: 3%;
+    border-right: 2px solid #ff004f;
+    width: 7ch;
+   
+    animation: typing 1s steps(20, end), cursor 0.9s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0ch;
+    }
+    to {
+      width: 7ch;
+    }
+  }
+  
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .intro {
+    position: relative;
+    top: 20%;
+    align-items: center;
+  justify-content: center;
+    display: flex;
+    height: 32%;
+    width:100%;
+    font-size: max(1.5vh,1.2vw);
+    color: white;
+  }
+  .resume {
+    box-sizing: border-box;
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    font-size: max(1.1vw,1.4vh);
+    font: bold;
+    justify-content: center;
+    position: relative;
+    top: 26%;
+    min-width: 100px;
+    width: 29%;
+    
+    height: 6.8%;
+    background-color: #ff004f;
+    border-radius: 7rem;
+  }
+  .resume a {
+    text-decoration: none;
+    color: white;
+  }
+  .resume:hover {
+    color: #ff004f;
+    background-color: rgb(18, 18, 18);
+    border: 2px solid #ff004f;
+  }
+  .contact-i{
+    position: relative;
+    top: 34%;
+    display: flex;
+    height: 50%;
+   width: 65%; 
+    justify-content: space-between;
+  }
+ 
+ 
+  .contact-i img {
+    border-radius: 19%;
+    padding: 10%;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    border: 2px solid rgb(18, 18, 18);
+    height: 10%;
+    width: 100%;
+  }
+  .contact-i img:hover {
+    transform: scale(1.1);
+    border-color: rgb(56, 56, 56);
+  }
+  @media (max-width:600px){
+    .left_hi{
+      position: relative;
+      top: 10%;
+      
+    }
+    .resume{
+      position: relative;
+      top:30%;
+    }
+    
+      .contact-i {
+         width: 50vw;
+      }
+
+      .photo {
+        position: relative;
+        top: 0%;}
+        
+        
+  }
